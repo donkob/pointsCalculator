@@ -4,7 +4,7 @@ use PHPUnit\Framework\TestCase;
 
 class SubjectTest extends TestCase{
 
-    protected $subject;
+    private $subject;
 
     public function testGetNameFunction (){
         $this->subject = new Subject("matematika");

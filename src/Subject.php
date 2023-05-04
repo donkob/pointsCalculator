@@ -10,12 +10,12 @@
     /**
      * @var string Name of Subject
      */
-    protected $name;
+    private $name;
 
     /**
      * @var string Level of Subject
      */
-    protected $level;
+    private $level;
 
     /**
      * @param string The name and the level of subject. The level is optinal. If we leave blank, it defaults to "közép".
