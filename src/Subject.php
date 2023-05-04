@@ -20,9 +20,9 @@
     /**
      * @param string The name and the level of subject. The level is optinal. If we leave blank, it defaults to "közép".
      */
-    public function __construct($name, $level="közép"){
+    public function __construct($name, $level='közép'){
         $this->name = $name;
-        $this->level = $level;
+        $this->level = $level == '' ? 'közép' : $level;        
     }
 
     /**

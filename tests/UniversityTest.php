@@ -21,6 +21,7 @@ class UniversityTest extends TestCase{
         $this->assertInstanceOf("Subject", $this->university->getRequirements()['mandatory']);
         $this->assertInstanceOf("Subject", $this->university->getRequirements()['optional'][0]);
         $this->assertEquals("biológia", $this->university->getRequirements()['optional'][0]->getName());
+        $this->assertEquals("közép", $this->university->getRequirements()['mandatory']->getLevel());
     }
 
 }
